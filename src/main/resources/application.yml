@@ -1,0 +1,17 @@
+
+server:
+  port: 8762
+spring:
+  application:
+    name: gatewayserver
+eureka:
+  client:
+    service-url: http://172.16.1.11:8761/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
